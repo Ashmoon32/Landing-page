@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Roboto, sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            height: 50px;
+
+        }
+
+        header,
+        .hero,
+        footer {
+            background-color: #1F2937;
+        }
+
+        .header-logo {
+            font-size: 24px;
+            color: #F9FAF8;
+
+        }
+
+        .header-logo,
+        .right-link-container,
+        .hero-main-first-cont,
+        .hero-main-sec-cont {
+            margin: 0 auto;
+        }
+
+        header a {
+            text-decoration: none;
+            color: #F9FAF8;
+        }
+
+        .right-link-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .hero .hero-main-text {
+            font-size: 48px;
+            color: #F9FAF8;
+            font-weight: 900;
+        }
+
+        .hero .hero-secondary-text {
+            font-size: 16px;
+            color: #E5E7EB;
+        }
+
+        .hero {
+            display: flex;
+
+        }
+
+        button,
+        .hero4 {
+            background-color: #3882F6;
+            color: #F9FAF8;
+        }
+
+        .hero-button {
+            border: none;
+            border-radius: 8px;
+            padding: 5px 15px;
+        }
+
+        .footer-button {
+            border: 2px solid white;
+            border-radius: 8px;
+            padding: 5px 15px;
+        }
+
+        footer {
+            color: #F9FAF8;
+            text-align: center;
+            padding: 30px;
+
+        }
+
+        .hero3-header {
+            font-size: 36px;
+            color: #1F2937;
+            font-weight: 900;
+        }
+
+        .hero3-img-container {
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        .hero3-img-container img {
+            border: 5px solid #3882F6;
+            border-radius: 20px;
+        }
+
+        .hero-main-first-cont,
+        .hero-main-sec-cont {
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <header>
+            <div class="header-logo">Header Logo</div>
+            <div class="right-link-container">
+                <a href="#">Header link one</a>
+                <a href="#">Header link two</a>
+                <a href="#">Header link three</a>
+            </div>
+
+        </header>
+
+
+        <section class="hero">
+            <div class="hero-main-first-cont">
+                <div class="hero-main-text">This Website is awesome </div>
+                <p class="hero-secondary-text">This website has some subtext that goes there under the main tilte.</p>
+                <button type="submit" class="hero-button">Sign up</button>
+            </div>
+            <div class=" hero-main-sec-cont;">
+                <p>this is a placeholder for an image</p>
+                <img src="./eren.jpg" alt="image">
+            </div>
+        </section>
+
+
+        <section class="hero3">
+            <div class="hero3-header">Some random informaion.</div>
+
+            <div class="hero3-img-container">
+                <img src="./eren.jpg" alt="img">
+                <img src="./eren.jpg" alt="img">
+                <img src="./eren.jpg" alt="img">
+                <img src="./eren.jpg" alt="img">
+            </div>
+
+
+        </section>
+
+
+        <section>
+
+            <p>This is an inspiring quote....</p>
+
+        </section>
+
+        <section class="hero4">
+
+            <div>
+                <p>Call to action! It's time!</p>
+                <p>Sign up for our...</p>
+            </div>
+            <button type="submit" class="footer-button">Sign up</button>
+
+
+        </section>
+
+
+        <footer>
+
+            Copyright &copy; The Odin Project 2021
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
