@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/*header section styling*/
+.header {
+    background-color: #1f2937;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15%;
+}
+
+.logo img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid black;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.nav-links a:hover {
+    border-bottom: 2px solid white;
+
+
+}
+
+/* Hero section styling*/
+
+.hero {
+    background-color: #1f2937;
+    padding: 100px 15%;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero h1 {
+    font-weight: 900;
+    font-size: 48px;
+    color: #F9FAF8;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #E5E7EB;
+    margin-bottom: 20px;
+}
+
+.hero-button {
+    background-color: #3882F6;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hero-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img img {
+    border: 5px solid rgba(134, 156, 100, 0.5);
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+
+}
+
+/* information section styling*/
+
+.info {
+    padding: 50px 15% 100px;
+    text-align: center;
+}
+
+.info h2 {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+    text-decoration: underline dotted;
+}
+
+.info-cards {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.card {
+    max-width: 170px;
+    margin: 20px;
+
+}
+
+.card-img {
+    height: 170px;
+    margin-bottom: 30px;
+}
+
+.card-text {
+    color: #4b5563;
+    font-size: 1.5em;
+    word-spacing: 3px;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+.info .info-cards .card-img img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border: 4px solid #3882F6;
+    border-radius: 15px;
+}
+
+/*quote section styling*/
+
+.quote-section {
+    background-color: #E5E7EB;
+    padding: 100px 25%;
+
+}
+
+.quote {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1F2937;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.author {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1F2937;
+    text-align: right
+}
+
+/* call to action section styling */
+
+.call-to-action {
+    padding: 100px 15%;
+
+}
+
+.cta-container {
+    background-color: #3882F6;
+    padding: 50px 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta-texts h3 {
+    color: #F9FAF8;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.cta-texts p {
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+.cta-btn {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 8px 35px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/*footer sextion styling*/
+
+.footer {
+    background-color: #1F2937;
+    color: #E5E7EB;
+    text-align: center;
+    padding: 40px;
+    margin-top: auto;
+
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}

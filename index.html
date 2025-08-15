@@ -4,185 +4,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-    <style>
-        body {
-            font-family: Roboto, sans-serif;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            height: 50px;
-
-        }
-
-        header,
-        .hero,
-        footer {
-            background-color: #1F2937;
-        }
-
-        .header-logo {
-            font-size: 24px;
-            color: #F9FAF8;
-
-        }
-
-        .header-logo,
-        .right-link-container,
-        .hero-main-first-cont,
-        .hero-main-sec-cont {
-            margin: 0 auto;
-        }
-
-        header a {
-            text-decoration: none;
-            color: #F9FAF8;
-        }
-
-        .right-link-container {
-            display: flex;
-            gap: 20px;
-        }
-
-        .hero .hero-main-text {
-            font-size: 48px;
-            color: #F9FAF8;
-            font-weight: 900;
-        }
-
-        .hero .hero-secondary-text {
-            font-size: 16px;
-            color: #E5E7EB;
-        }
-
-        .hero {
-            display: flex;
-
-        }
-
-        button,
-        .hero4 {
-            background-color: #3882F6;
-            color: #F9FAF8;
-        }
-
-        .hero-button {
-            border: none;
-            border-radius: 8px;
-            padding: 5px 15px;
-        }
-
-        .footer-button {
-            border: 2px solid white;
-            border-radius: 8px;
-            padding: 5px 15px;
-        }
-
-        footer {
-            color: #F9FAF8;
-            text-align: center;
-            padding: 30px;
-
-        }
-
-        .hero3-header {
-            font-size: 36px;
-            color: #1F2937;
-            font-weight: 900;
-        }
-
-        .hero3-img-container {
-            display: flex;
-            justify-content: space-evenly;
-
-        }
-
-        .hero3-img-container img {
-            border: 5px solid #3882F6;
-            border-radius: 20px;
-        }
-
-        .hero-main-first-cont,
-        .hero-main-sec-cont {
-            margin: 0 auto;
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
-    <div class="main-container">
 
-        <header>
-            <div class="header-logo">Header Logo</div>
-            <div class="right-link-container">
-                <a href="#">Header link one</a>
-                <a href="#">Header link two</a>
-                <a href="#">Header link three</a>
+    <header class="header">
+        <div class="logo">
+            <img src="./cartoon-portrait-leonardo-da-vinci_498048-923.avif" alt="logo">
+        </div>
+        <nav class="nav-links">
+            <a href="#hero"><i class="fas fa-home"></i></a>
+            <a href="#info"><i class="fas fa-info-circle"></i></a>
+            <a href="#footer"><i class="fas fa-phone"></i></a>
+        </nav>
+    </header>
+
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1 style="text-transform: capitalize;">Leonardo da Vinci , <span
+                    style="font-style: italic; font-size: 0.8em;">
+                    Renaissance Polymath </span>
+            </h1>
+            <p>Leonardo da Vinci (1452–1519) was an Italian polymath whose genius spanned art, science, engineering,
+                anatomy, and
+                invention. Renowned for masterpieces like Mona Lisa and The Last Supper, he combined deep observation
+                with innovative
+                thinking, leaving behind notebooks filled with visionary ideas centuries ahead of his time. His
+                insatiable curiosity and
+                relentless pursuit of knowledge made him one of history’s most extraordinary minds.</p>
+            <a href="https://en.wikipedia.org/wiki/Leonardo_da_Vinci" target="_blank" rel="noopener noreferrer"
+                style="text-decoration: none; color:white ;"><button class="hero-button" type="submit">More
+                    Details..</button></a>
+        </div>
+        <div class="hero-img"><img src="./leonardo-da-vinci.jpg" alt="leonardo-da-vinci"></div>
+    </section>
+
+    <section class="info" id="info">
+        <h2>Some of the popular paintings of Leonardo da vinci</h2>
+        <div class="info-cards">
+            <div class="card">
+                <div class="card-img"><img
+                        src="./Leonardo_da_Vinci,_Salvator_Mundi,_c.1500,_oil_on_walnut,_45.4_×_65.6_cm.jpg" alt="">
+                </div>
+                <p class="card-text">Salvator Mundi</p>
             </div>
 
-        </header>
-
-
-        <section class="hero">
-            <div class="hero-main-first-cont">
-                <div class="hero-main-text">This Website is awesome </div>
-                <p class="hero-secondary-text">This website has some subtext that goes there under the main tilte.</p>
-                <button type="submit" class="hero-button">Sign up</button>
-            </div>
-            <div class=" hero-main-sec-cont;">
-                <p>this is a placeholder for an image</p>
-                <img src="./eren.jpg" alt="image">
-            </div>
-        </section>
-
-
-        <section class="hero3">
-            <div class="hero3-header">Some random informaion.</div>
-
-            <div class="hero3-img-container">
-                <img src="./eren.jpg" alt="img">
-                <img src="./eren.jpg" alt="img">
-                <img src="./eren.jpg" alt="img">
-                <img src="./eren.jpg" alt="img">
+            <div class="card">
+                <div class="card-img"><img src="./Leonardo_da_Vinci_-_The_Last_Supper_high_res.jpg" alt=""></div>
+                <p class="card-text">The Last Supper</p>
             </div>
 
-
-        </section>
-
-
-        <section>
-
-            <p>This is an inspiring quote....</p>
-
-        </section>
-
-        <section class="hero4">
-
-            <div>
-                <p>Call to action! It's time!</p>
-                <p>Sign up for our...</p>
+            <div class="card">
+                <div class="card-img"><img src="./Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg" alt="">
+                </div>
+                <p class="card-text">Mona Lisa(unfinished)</p>
             </div>
-            <button type="submit" class="footer-button">Sign up</button>
 
+            <div class="card">
+                <div class="card-img"><img src="./Leonardo_da_Vinci_-_Adorazione_dei_Magi_-_Google_Art_Project.jpg"
+                        alt=""></div>
+                <p class="card-text">Saint Jerome in the Wilderness centuries(unfinished)</p>
+            </div>
 
-        </section>
+        </div>
+    </section>
 
+    <section class="quote-section">
+        <p class="quote">
+            "Learning never exhausts the mind"
+        </p>
+        <p class="author">-Leonardo da Vinci</p>
+    </section>
 
-        <footer>
+    <section class="call-to-action">
+        <div class="cta-container">
+            <div class="cta-texts">
+                <h3>Discover the Genius of Leonardo da Vinci</h3>
+                <p>Explore his life, art, and groundbreaking ideas that shaped history.</p>
+            </div>
+            <button class="cta-btn" type="submit"><a style="text-decoration: none; color: white;"
+                    href="https://www.britannica.com/biography/Leonardo-da-Vinci" target="_blank">
+                    Learn More
+                </a></button>
+        </div>
+    </section>
 
-            Copyright &copy; The Odin Project 2021
-
-        </footer>
-
-    </div>
+    <footer class="footer" id="footer">
+        <p style="display: inline;">Connect with me:</p>
+        <a href="https://github.com/Ashmoon32" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:nyeinmaung3021@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+        <p>Copyright &copy; 2025 Ashmoon32</p>
+    </footer>
 
 </body>
 
